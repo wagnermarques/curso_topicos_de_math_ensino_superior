@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 // --- CONFIGURAÇÃO DA CENA ---
 const scene = new THREE.Scene();
@@ -17,8 +18,12 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 controls.screenSpacePanning = true; 
 
-const gridHelper = new THREE.GridHelper(100, 50, 0x444444, 0x222222);
-scene.add(gridHelper);
+// Carrega o Cenário do Blender
+const loader = new GLTFLoader();
+loader.load('assets/stadium.glb', (gltf) => {
+    scene.add(gltf.scene);
+    console.log("Cenário do Blender carregado!");
+});
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambientLight);
