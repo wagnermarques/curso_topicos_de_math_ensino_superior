@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo 3D: Derivadas e Projéteis</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: sans-serif; display: flex; }
+        #canvas-container { flex: 2; height: 100vh; position: relative; }
+        #ui-container { flex: 1; height: 100vh; background: #222; color: white; padding: 20px; overflow-y: auto; border-left: 2px solid #444; }
+        .chart-container { height: 200px; margin-bottom: 20px; background: #333; border-radius: 8px; padding: 10px; }
+        .controls { background: #333; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; font-size: 0.9em; }
+        input { width: 100%; margin-bottom: 15px; }
+        h2 { margin-top: 0; color: #0af; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div id="ui-container">
+        <h2>Painel de Engenharia</h2>
+        
+        <div class="controls">
+            <label>Ângulo de Lançamento: <span id="angle-val">45</span>°</label>
+            <input type="range" id="angle" min="0" max="90" value="45">
+            
+            <label>Velocidade Inicial: <span id="power-val">20</span> m/s</label>
+            <input type="range" id="power" min="5" max="50" value="20">
+            
+            <button id="launch" style="width: 100%; padding: 10px; background: #0af; border: none; color: white; font-weight: bold; cursor: pointer; border-radius: 4px;">DISPARAR</button>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="posChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="velChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Import Maps para Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
