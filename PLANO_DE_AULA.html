@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-10 dom 21:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Plano de Ensino Estruturado: Missão Engenharia Balística</title>
+<meta name="author" content="Professor com ajuda do Gemini" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Plano de Ensino Estruturado: Missão Engenharia Balística</h1>
+<div id="outline-container-org0593c69" class="outline-2">
+<h2 id="org0593c69">1) Metodologia Adotada</h2>
+<div class="outline-text-2" id="text-org0593c69">
+<p>
+As metodologias principais adotadas são a <b><b>Aprendizagem Baseada em Projetos (PBL)</b></b> e a <b><b>Resolução de Problemas</b></b>. 
+</p>
+
+<ul class="org-ul">
+<li>O propósito do projeto é a  construção de um modelo matemático preditivo para um simulador de lançamento de projéteis.</li>
+<li>A resolução de problemas é aplicada no desafio de determinar os parâmetros de lançamento necessários para atingir um alvo fixo.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgac40ae8" class="outline-2">
+<h2 id="orgac40ae8">2) Conteúdo Abordado</h2>
+<div class="outline-text-2" id="text-orgac40ae8">
+<p>
+O trabalho desenvolve a aplicação prática de derivadas no estudo do
+movimento parabólico.
+</p>
+
+<ul class="org-ul">
+<li><b><b>Elementos/Ações:</b></b> Modelagem de funções de posição \(s(t)\), cálculo de vetores velocidade \(v(t)\) via diferenciação, análise de pontos críticos (altura máxima) e validação experimental em ambiente 3D (WebGL).</li>
+<li><b><b>Disciplina:</b></b> Cálculo Diferencial e Integral I ou Física Mecânica.</li>
+<li><b><b>Curso:</b></b> Engenharias (Civil, Mecânica, Computação) ou Licenciatura em Matemática/Física.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf87ee4e" class="outline-2">
+<h2 id="orgf87ee4e">3) O Objetivo de Aprendizagem</h2>
+<div class="outline-text-2" id="text-orgf87ee4e">
+<ul class="org-ul">
+<li><b><b>Competências:</b></b> Capacidade de transpor um fenômeno físico para uma linguagem matemática formal.</li>
+<li><b><b>Habilidades:</b></b> 
+<ul class="org-ul">
+<li>Calcular e interpretar o significado físico da derivada primeira em funções de posição.</li>
+<li>Resolver equações diferenciais básicas de movimento sob aceleração constante.</li>
+<li>Utilizar ferramentas computacionais (Simulador OpenGL/WebGL) para validar modelos teóricos.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9de2ae0" class="outline-2">
+<h2 id="org9de2ae0">4) Tempo de Execução</h2>
+<div class="outline-text-2" id="text-org9de2ae0">
+<ul class="org-ul">
+<li><b><b>Preparação (Docente):</b></b> 2 horas para configuração do ambiente Web e personalização do arquivo <code>.blend</code> no Blender.</li>
+<li><b><b>Desenvolvimento Extra-classe:</b></b> 2 horas previstas para pesquisa e leitura prévia sobre cinemática vetorial.</li>
+<li><b><b>Aulas em sala:</b></b> 2 aulas (100 minutos no total).
+<ul class="org-ul">
+<li>Aula 1: Fundamentação teórica e apresentação do problema.</li>
+<li>Aula 2: Prática laboratorial no simulador e fechamento.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge255f77" class="outline-2">
+<h2 id="orge255f77">5) Desenvolvimento / Implementação (Passo a Passo)</h2>
+<div class="outline-text-2" id="text-orge255f77">
+<ol class="org-ol">
+<li><b><b>Apresentação do Problema (PBL):</b></b> O docente projeta o simulador 3D com um alvo em posição fixa e desafia os alunos a atingirem o alvo na primeira tentativa real.</li>
+<li><b><b>Modelagem Teórica:</b></b> Os alunos deduzem as equações de movimento:
+\(y(t) = v_0 \sin(\theta) t - \frac{1}{2}g t^2\)
+\(v_y(t) = \frac{dy}{dt} = v_0 \sin(\theta) - gt\)</li>
+<li><b><b>Resolução Analítica:</b></b> Os grupos calculam a velocidade \(v_0\) necessária para um ângulo \(\theta\) escolhido, utilizando a fórmula do alcance: \(x = \frac{v_0^2 \sin(2\theta)}{g}\).</li>
+<li><b><b>Laboratório Digital:</b></b> Inserção dos parâmetros no simulador. Uso do <b>Scrubber</b> temporal para analisar se a velocidade vertical anula-se exatamente no ápice da trajetória.</li>
+<li><b><b>Discussão de Variáveis:</b></b> Debate sobre como a derivada mudaria se incluíssemos o arrasto do ar (função não linear).</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4d41236" class="outline-2">
+<h2 id="org4d41236">6) Avaliação</h2>
+<div class="outline-text-2" id="text-org4d41236">
+<ul class="org-ul">
+<li><b><b>Forma de Avaliação:</b></b> Avaliação processual baseada no relatório de modelagem (cálculos manuais) e no sucesso do lançamento no simulador.</li>
+<li><b><b>Interações:</b></b> 
+<ul class="org-ul">
+<li><b>Antes:</b> Feedback sobre os cálculos prévios dos grupos.</li>
+<li><b>Durante:</b> Mediação do docente durante o uso do simulador, questionando o significado dos vetores tangentes.</li>
+<li><b>Após:</b> Discussão coletiva sobre as discrepâncias entre teoria e prática.</li>
+</ul></li>
+<li><b><b>Adaptações:</b></b> Necessário acesso a laboratório de informática ou dispositivos com suporte a WebGL.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfe3e886" class="outline-2">
+<h2 id="orgfe3e886">7) Reflexões Docente</h2>
+<div class="outline-text-2" id="text-orgfe3e886">
+<p>
+A escolha da metodologia PBL com simulador OpenGL justifica-se pela necessidade de tornar o Cálculo tangível. A visualização do vetor velocidade (tangente) em 3D ajuda a superar a barreira da abstração, permitindo que o aluno "veja" a derivada. A contribuição mais relevante é a percepção de que a matemática não é apenas um exercício de manipulação de símbolos, mas uma ferramenta de previsão e controle da realidade física.
+</p>
+</div>
+</div>
+<div id="outline-container-orgcc370ec" class="outline-2">
+<h2 id="orgcc370ec">8) Referência</h2>
+<div class="outline-text-2" id="text-orgcc370ec">
+<ul class="org-ul">
+<li>STEWART, James. <b><b>Cálculo, Volume 1</b></b>. Cengage Learning.</li>
+<li>HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. <b><b>Fundamentos de Física: Mecânica (Volume 1)</b></b>. LTC.</li>
+<li>Documentação Three.js: <a href="https://threejs.org/docs/">https://threejs.org/docs/</a></li>
+<li>Documentação Blender bpy: <a href="https://docs.blender.org/api/current/">https://docs.blender.org/api/current/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2026-05-10</p>
+<p class="author">Author: Professor com ajuda do Gemini</p>
+<p class="date">Created: 2026-05-10 dom 21:37</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
