@@ -19,11 +19,16 @@ movimento parabólico.
   cálculo de vetores velocidade $v(t)$ via diferenciação, análise de
   pontos críticos (altura máxima) e validação experimental em ambiente
   3D (WebGL).
+
 - **Disciplina:** Cálculo Diferencial e Integral I ou Física Mecânica.
+
 - **Curso:** Engenharias (Civil, Mecânica, Computação) ou Licenciatura em Matemática/Física.
 
+
 * 3) O Objetivo de Aprendizagem
+
 - **Competências:** Capacidade de transpor um fenômeno físico para uma linguagem matemática formal.
+
 - **Habilidades:** 
   - Calcular e interpretar o significado físico da derivada primeira em funções de posição.
   - Resolver equações diferenciais básicas de movimento sob aceleração constante.
@@ -32,17 +37,18 @@ movimento parabólico.
 * 4) Tempo de Execução
 - **Preparação (Docente):** 2 horas para configuração do ambiente Web e personalização do arquivo ~.blend~ no Blender.
 - **Desenvolvimento Extra-classe:** 2 horas previstas para pesquisa e leitura prévia sobre cinemática vetorial.
-- **Aulas em sala:** 2 aulas (100 minutos no total).
+- **Aulas em sala:** 2 aulas
   - Aula 1: Fundamentação teórica e apresentação do problema.
   - Aula 2: Prática laboratorial no simulador e fechamento.
 
 * 5) Desenvolvimento / Implementação (Passo a Passo)
-1. **Apresentação do Problema (PBL):** O docente projeta o simulador 3D com um alvo em posição fixa e desafia os alunos a atingirem o alvo na primeira tentativa real.
+1. **Apresentação do Problema (PBL):** O professor projeta o simulador 3D com um alvo em posição fixa e desafia os alunos a atingirem o alvo na primeira tentativa real.
 2. **Modelagem Teórica:** Os alunos deduzem as equações de movimento:
    $y(t) = v_0 \sin(\theta) t - \frac{1}{2}g t^2$
    $v_y(t) = \frac{dy}{dt} = v_0 \sin(\theta) - gt$
 3. **Resolução Analítica:** Os grupos calculam a velocidade $v_0$ necessária para um ângulo $\theta$ escolhido, utilizando a fórmula do alcance: $x = \frac{v_0^2 \sin(2\theta)}{g}$ .
-4. **Laboratório Digital:** Inserção dos parâmetros no simulador. Uso do *Scrubber* temporal para analisar se a velocidade vertical anula-se exatamente no ápice da trajetória.
+4. **Laboratório Digital:** Inserção dos parâmetros no simulador. Uso
+   do slide de tempo para analisar se a velocidade vertical anula-se exatamente no ápice da trajetória.
 5. **Discussão de Variáveis:** Debate sobre como a derivada mudaria se incluíssemos o arrasto do ar (função não linear).
 
 * 6) Avaliação
@@ -61,3 +67,6 @@ A escolha da metodologia PBL com simulador OpenGL justifica-se pela necessidade 
 - HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. **Fundamentos de Física: Mecânica (Volume 1)**. LTC.
 - Documentação Three.js: https://threejs.org/docs/
 - Documentação Blender bpy: https://docs.blender.org/api/current/
+
+  Obs. Não consegui fazer a animação funcionar no blender mas no
+  navegador tá certinho e pode ser acessado no link
