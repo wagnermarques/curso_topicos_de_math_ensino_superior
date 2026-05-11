@@ -69,4 +69,4 @@ A escolha da metodologia PBL com simulador OpenGL justifica-se pela necessidade 
 - Documentação Blender bpy: https://docs.blender.org/api/current/
 
   Obs. Não consegui fazer a animação funcionar no blender mas no
-  navegador tá certinho e pode ser acessado no link
+  navegador tá certinho e pode ser acessado no link https://wagnermarques.github.io/curso_topicos_de_math_ensino_superior/
